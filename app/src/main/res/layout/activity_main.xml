@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/labelapp"
+                android:textAlignment="center"
+                android:textColor="@color/judul"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:background="@color/txt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/am"
+                android:textAlignment="center"
+                android:textColor="@color/judul"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/editND"
+                        android:layout_width="187dp"
+                        android:layout_height="match_parent"
+                        android:ems="15"
+                        android:hint="@string/nd"
+                        android:inputType="text"
+                        android:textColor="@color/txt" />
+
+                    <EditText
+                        android:id="@+id/editNB"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30dp"
+                        android:ems="15"
+                        android:hint="@string/nb"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/txt" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="398dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/editTahun"
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:ems="5"
+                        android:hint="@string/tl"
+                        android:inputType="text"
+                        android:textColor="@color/txt" />
+
+                    <EditText
+                        android:id="@+id/editDuration"
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:ems="500"
+                        android:hint="@string/tlhr"
+                        android:inputType="date" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:ems="500"
+                android:hint="@string/almt"
+                android:textColor="@color/txt"
+                android:textSize="20sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/jk"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/judul"
+                    android:textSize="15sp"
+                    tools:ignore="RtlCompat" />
+
+                <RadioGroup
+                    android:id="@+id/agm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="149dp"
+                        android:layout_height="50dp"
+                        android:text="@string/lk" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/pr" />
+                </RadioGroup>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="411dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/agm"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/judul"
+                    android:textSize="15sp"
+                    tools:ignore="RtlCompat" />
+
+                <RadioGroup
+                    android:id="@+id/jk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="@string/islm" />
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="@string/bdh" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:text="@string/krstn" />
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:text="@string/ktlk" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="47dp"
+                            android:text="@string/khc" />
+
+                        <RadioButton
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/hnd" />
+
+                    </TableRow>
+
+                    <RadioButton
+                        android:layout_width="269dp"
+                        android:layout_height="30dp"
+                        android:text="@string/ak" />
+
+                </RadioGroup>
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/editTlp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="15"
+                android:hint="@string/tlpn"
+                android:inputType="phone"
+                android:textColor="@color/txt" />
+
+            <EditText
+                android:id="@+id/editmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="15"
+                android:hint="@string/mail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/txt" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/editpsswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:hint="@string/psswrd"
+                    android:inputType="textPassword"
+                    android:textColor="@color/txt" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/editpsswrdkmbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:hint="@string/pssagn"
+                    android:inputType="textPassword"
+                    android:textColor="@color/txt" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/simpleButton"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/cnl"
+                        android:textColor="@color/btn" />
+
+                    <Button
+                        android:id="@+id/simpleButton2"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/btn"
+                        android:textColor="@color/btn" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
