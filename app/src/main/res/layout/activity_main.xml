@@ -7,121 +7,76 @@
     tools:context=".MainActivity">
 
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
+            android:background="@color/background"
             android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/labelapp"
-                android:textAlignment="center"
-                android:textColor="@color/judul"
-                android:textSize="50sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="11dp"
-                android:background="@color/txt" />
+            android:layout_marginLeft="8dp">
 
             <TextView
+                android:id="@+id/TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:text="@string/am"
+                android:layout_marginTop="50dp"
+                android:text="@string/app_name"
                 android:textAlignment="center"
-                android:textColor="@color/judul"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal">
+            </TextView>
             <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="10dp">
+                android:layout_marginTop="100dp">
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
+                    android:layout_height="wrap_content">
                     <EditText
-                        android:id="@+id/editND"
-                        android:layout_width="187dp"
-                        android:layout_height="match_parent"
-                        android:ems="15"
+                        android:id="@+id/editFN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
                         android:hint="@string/nd"
-                        android:inputType="text"
-                        android:textColor="@color/txt" />
-
+                        android:inputType="textPersonName"/>
                     <EditText
-                        android:id="@+id/editNB"
-                        android:layout_width="185dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="30dp"
-                        android:ems="15"
+                        android:id="@+id/editBN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
                         android:hint="@string/nb"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/txt" />
+                        android:inputType="textPersonName"/>
 
                 </TableRow>
-
-            </TableLayout>
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
                 <TableRow
-                    android:layout_width="398dp"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                     <EditText
-                        android:id="@+id/editTahun"
-                        android:layout_width="186dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:ems="5"
+                        android:id="@+id/editTmptLhr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
                         android:hint="@string/tl"
-                        android:inputType="text"
-                        android:textColor="@color/txt" />
-
+                        android:inputType="textPersonName"/>
                     <EditText
-                        android:id="@+id/editDuration"
-                        android:layout_width="185dp"
-                        android:layout_height="match_parent"
-                        android:ems="500"
+                        android:id="@+id/editTglLhr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
                         android:hint="@string/tlhr"
-                        android:inputType="date" />
+                        android:inputType="textPersonName"/>
+
                 </TableRow>
-
-
             </TableLayout>
 
             <EditText
@@ -313,14 +268,14 @@
 
 
                     <Button
-                        android:id="@+id/simpleButton"
+                        android:id="@+id/bttnkmbl"
                         android:layout_width="180dp"
                         android:layout_height="match_parent"
                         android:text="@string/cnl"
                         android:textColor="@color/btn" />
 
                     <Button
-                        android:id="@+id/simpleButton2"
+                        android:id="@+id/bttndftr"
                         android:layout_width="180dp"
                         android:layout_height="match_parent"
                         android:text="@string/btn"
